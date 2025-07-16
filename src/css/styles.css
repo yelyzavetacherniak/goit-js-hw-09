@@ -15,7 +15,7 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 
-/* Стилі галереї */
+/* GALLERY */
 * {
   box-sizing: border-box;
 }
@@ -47,4 +47,80 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   cursor: zoom-in;
   transform: scale(1.03);
+}
+
+/* FORM */
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: auto;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+textarea {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 12px;
+  resize: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+}
+
+.input-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 12px;
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+  width: 95px;
+  height: 40px;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background: #ccc;
+  color: #4e75ff;
 }
