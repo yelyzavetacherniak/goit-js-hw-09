@@ -12,7 +12,39 @@
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+/* Стилі галереї */
+* {
+  box-sizing: border-box;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 72px) / 3);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: zoom-in;
+  transform: scale(1.03);
+}
